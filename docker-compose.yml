@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    ports:
+      - "${APP_PORT:-18006}:8000"
+    environment:
+      PYTHONUNBUFFERED: "1"
+      SECRET_KEY: ${SECRET_KEY:-dev-only-change-me}
+      DATABASE_URL: ${DATABASE_URL:-sqlite:///./consensus.db}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-change-me}
+    restart: unless-stopped
