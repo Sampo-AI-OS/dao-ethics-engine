@@ -1,10 +1,10 @@
 # DAO Ethics Engine
 
-DAO Ethics Engine is a curated public-edition node from the Sampo AI OS ecosystem. It provides the governance-facing reasoning layer behind DAO Hub's ethics surfaces: multi-agent consensus simulation, proposal evaluation, benefit-distribution analysis, evidence-quality scoring, and cognitive-bias detection.
+DAO Ethics Engine is a governance and reasoning node from the Sampo AI OS ecosystem. It provides the analytical layer behind DAO Hub's ethics surfaces: multi-agent consensus simulation, proposal evaluation, benefit-distribution analysis, evidence-quality scoring, and cognitive-bias detection.
 
 This repository should be read as a standalone node around DAO Hub, not as the hub itself. DAO Hub remains the orchestration center. This node provides one of the governance subsystems that the hub can call into for ethics review, audit summaries, and consensus history.
 
-See `PUBLIC_EDITION_SCOPE.md` for what is included here and what was intentionally left out.
+See `PUBLIC_EDITION_SCOPE.md` for repository scope and runtime notes.
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-service-009688)
@@ -12,7 +12,7 @@ See `PUBLIC_EDITION_SCOPE.md` for what is included here and what was intentional
 
 ## What This Node Does
 
-The public edition exposes three core capability groups:
+This repository exposes three core capability groups:
 
 1. Multi-agent consensus simulation
    Run belief propagation, Raft-style leader replication, or simplified Byzantine fault-tolerant consensus across a synthetic agent network.
@@ -35,7 +35,7 @@ The public edition exposes three core capability groups:
 
 ## Architecture Overview
 
-The public edition is intentionally compact.
+The repository is intentionally compact.
 
 - `main.py` contains the API, data models, consensus algorithms, and ethics evaluation pipeline
 - `tests/test_ethics_engine.py` validates core decision logic

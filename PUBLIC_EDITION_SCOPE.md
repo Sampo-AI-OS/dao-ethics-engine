@@ -1,12 +1,12 @@
 # Public Edition Scope
 
-This folder contains the curated public-edition version of the Multi-Agent AI Consensus + Ethics node that sits around DAO Hub inside the Sampo AI OS ecosystem.
+This folder contains the public repository version of the Multi-Agent AI Consensus + Ethics node that sits around DAO Hub inside the Sampo AI OS ecosystem.
 
 It is published as a standalone node because it powers governance-facing ethics evaluations, consensus history, and reasoning surfaces that DAO Hub can expose without revealing the full private ecosystem implementation.
 
-## Included
+## Repository Focus
 
-This public edition intentionally includes:
+This repository includes:
 
 - a working FastAPI service for multi-agent consensus simulations
 - the public ethics evaluation pipeline and immutable values manifest
@@ -14,15 +14,9 @@ This public edition intentionally includes:
 - a lightweight regression test file for the core ethics logic
 - documentation that explains how this node connects back to DAO Hub
 
-## Intentionally Excluded
+## Repository Boundary
 
-This repository does not include:
-
-- private downstream integrations beyond this node boundary
-- internal orchestration logic used only inside the broader DAO ecosystem
-- unpublished governance workflows, strategy material, or commercial planning
-- alternative stale router branches that are not part of the curated runtime
-- any higher-value private implementations that would disclose disproportionate moat relative to portfolio value
+This repository focuses on governance reasoning, consensus logic, and ethics evaluation rather than every surrounding ecosystem integration.
 
 ## Narrative Role
 
